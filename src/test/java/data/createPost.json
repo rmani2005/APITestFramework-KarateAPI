@@ -1,0 +1,4 @@
+{
+    "title": "Selenium - Shadow DOM issue",
+    "content": "In one of my past projects, I encountered a test scenario where I had to click a button to navigate to the next page. I searched for the element locator of the button on the page and ran the tests, hoping it would click the button and navigate to the next page."
+}
