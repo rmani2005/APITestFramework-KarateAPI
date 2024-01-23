@@ -6,7 +6,7 @@ function fn() {
   }
   var config = {
     env: env,
-    baseurlConfig: 'http://192.168.0.55:3002/api/',
+    baseurlConfig: 'http://manikandanravi.in/api/',
     baseurlConfig1: 'https://jsonplaceholder.typicode.com'
   }
   if (env == 'dev') {
