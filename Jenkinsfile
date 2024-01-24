@@ -27,9 +27,7 @@ pipeline
             {
                 success 
                 {
-                    archiveArtifacts artifacts:'Report/searchengine/**/*.html', fingerprint: true
-                    archiveArtifacts artifacts:'target/surefire-reports/index.html', fingerprint: true
-                    junit 'target/surefire-reports/**/*.html' 
+                    archiveArtifacts artifacts:'target/cucumber-html-reports/*.html', fingerprint: true
                     echo 'Successfully!'
                 }
                 
