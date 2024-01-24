@@ -9,10 +9,10 @@ class ParallelRunner {
 
     @Test
     void testParallel() {
-        Results results = Runner.path("classpath:features/usersInJsonPlaceholder.feature")
+        Results results = Runner.path("classpath:features/")
                 .outputCucumberJson(true)
                 //.tags("@rock")
-                .parallel(5);
+                .parallel(1);
         assertEquals(0, results.getFailCount(), results.getErrorMessages());
     }
 

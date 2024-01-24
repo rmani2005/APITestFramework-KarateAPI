@@ -20,8 +20,8 @@ public class TestRunnerCucumberReport {
 	@Test
 	public void testParallel() {
 		
-		String currentDir=System.getProperty("user.dir") + "/reports";
-		File file = new File(currentDir + "/reports/cucumber-html-reports");
+		String currentDir=System.getProperty("user.dir") + "/reports/";
+		File file = new File(currentDir + "/cucumber-html-reports");
 		String[] myFiles;
 		if (file.isDirectory()) {
 			myFiles = file.list();
@@ -31,15 +31,15 @@ public class TestRunnerCucumberReport {
 				myFile.delete();
 			}
 		}
-		System.out.println("currentDir-" + currentDir);
+		
 		String karateOutputPath = "target/surefire-reports/";
 		//long starttime = System.nanoTime();
-		long endtime = System.nanoTime();
+		
 	//	System.setProperty("karate.env", System.getProperty("karate.env"));
-	    Results results = Runner.path("classpath:features/")
-                .outputCucumberJson(true)
-                //.tags("@rock")
-                .parallel(5);
+		 Results results = Runner.path("classpath:features/")
+	                .outputCucumberJson(true)
+	                //.tags("@rock")
+	                .parallel(1);
 		
 		TestRunnerCucumberReport.generateReport(results.getReportDir());
 	   // TestRunnerCucumberReport.generateReport(currentDir);

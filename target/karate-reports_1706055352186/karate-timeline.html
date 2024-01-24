@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-3","id":3},{"content":"pool-1-thread-4","id":4},{"content":"pool-1-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"features\/usersInJsonPlaceholder[1:7]","start":1706045818585,"end":1706045819238,"title":"features\/usersInJsonPlaceholder[1:7] 16:36:58.585-16:36:59.238 Get all users and then get the first user by id"},{"id":2,"group":2,"content":"features\/usersInJsonPlaceholder[2.1:45]","start":1706045818585,"end":1706045819189,"title":"features\/usersInJsonPlaceholder[2.1:45] 16:36:58.585-16:36:59.189 create a user and then get it by id"},{"id":3,"group":3,"content":"features\/usersInJsonPlaceholder[2.2:46]","start":1706045818585,"end":1706045819185,"title":"features\/usersInJsonPlaceholder[2.2:46] 16:36:58.585-16:36:59.185 create a user and then get it by id"},{"id":4,"group":4,"content":"features\/usersInJsonPlaceholder[2.3:47]","start":1706045818585,"end":1706045819193,"title":"features\/usersInJsonPlaceholder[2.3:47] 16:36:58.585-16:36:59.193 create a user and then get it by id"},{"id":5,"group":5,"content":"features\/usersInJsonPlaceholder[2.4:48]","start":1706045818585,"end":1706045819168,"title":"features\/usersInJsonPlaceholder[2.4:48] 16:36:58.585-16:36:59.168 create a user and then get it by id"},{"id":6,"group":5,"content":"features\/usersInJsonPlaceholder[2.5:49]","start":1706045819178,"end":1706045819308,"title":"features\/usersInJsonPlaceholder[2.5:49] 16:36:59.178-16:36:59.308 create a user and then get it by id"},{"id":7,"group":3,"content":"features\/usersInJsonPlaceholder[2.6:50]","start":1706045819195,"end":1706045819322,"title":"features\/usersInJsonPlaceholder[2.6:50] 16:36:59.195-16:36:59.322 create a user and then get it by id"},{"id":8,"group":2,"content":"features\/usersInJsonPlaceholder[2.7:51]","start":1706045819195,"end":1706045819317,"title":"features\/usersInJsonPlaceholder[2.7:51] 16:36:59.195-16:36:59.317 create a user and then get it by id"},{"id":9,"group":4,"content":"features\/usersInJsonPlaceholder[3:54]","start":1706045819197,"end":1706045819372,"title":"features\/usersInJsonPlaceholder[3:54] 16:36:59.197-16:36:59.372 Checking the Site is reachable by iusing the Get method and response as 200 and OK"},{"id":10,"group":1,"content":"features\/usersInJsonPlaceholder[4:70]","start":1706045819246,"end":1706045819574,"title":"features\/usersInJsonPlaceholder[4:70] 16:36:59.246-16:36:59.574 Checking the Site is reachable by iusing the Get method and response as 200 and valdiating the response"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

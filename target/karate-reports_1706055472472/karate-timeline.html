@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"features\/myBioSitePerformanceCheck[1:16]","start":1706055397659,"end":1706055398064,"title":"features\/myBioSitePerformanceCheck[1:16] 19:16:37.659-19:16:38.064 Checking the Site is reachable by iusing the Get method and response as 200 and OK"},{"id":2,"group":1,"content":"features\/myBioSitePerformanceCheck[2:27]","start":1706055398069,"end":1706055398164,"title":"features\/myBioSitePerformanceCheck[2:27] 19:16:38.069-19:16:38.164 Checking the Site is reachable by iusing the Get method and response as 200 and OK"},{"id":3,"group":1,"content":"features\/myportfolioSite-API[1.1:39]","start":1706055398695,"end":1706055398899,"title":"features\/myportfolioSite-API[1.1:39] 19:16:38.695-19:16:38.899 Create a post and then get it by id"},{"id":4,"group":1,"content":"features\/myportfolioSite-API[1.2:40]","start":1706055398903,"end":1706055399071,"title":"features\/myportfolioSite-API[1.2:40] 19:16:38.903-19:16:39.071 Create a post and then get it by id"},{"id":5,"group":1,"content":"features\/myportfolioSite-API[1.3:41]","start":1706055399078,"end":1706055399212,"title":"features\/myportfolioSite-API[1.3:41] 19:16:39.078-19:16:39.212 Create a post and then get it by id"},{"id":6,"group":1,"content":"features\/myportfolioSite-API[2:44]","start":1706055399218,"end":1706055399374,"title":"features\/myportfolioSite-API[2:44] 19:16:39.218-19:16:39.374 Get all the post and then get the first user by id"},{"id":7,"group":1,"content":"features\/myportfolioSite-API[3:59]","start":1706055399381,"end":1706055399552,"title":"features\/myportfolioSite-API[3:59] 19:16:39.381-19:16:39.552 Create a post and then get it by id using the JSON Headers and reading JSON file"},{"id":8,"group":1,"content":"features\/myportfolioSite-API[4:84]","start":1706055399556,"end":1706055401055,"title":"features\/myportfolioSite-API[4:84] 19:16:39.556-19:16:41.055 OAUTH and OAUTH2.0 - https:\/\/authorization-server.com\/"},{"id":9,"group":1,"content":"features\/myportfolioSite-movie-API[1:11]","start":1706055401207,"end":1706055401379,"title":"features\/myportfolioSite-movie-API[1:11] 19:16:41.207-19:16:41.379 Get all the movie posts and then get the first user by id"},{"id":10,"group":1,"content":"features\/myportfolioSite-movie-API[2:25]","start":1706055401386,"end":1706055401491,"title":"features\/myportfolioSite-movie-API[2:25] 19:16:41.386-19:16:41.491 Get all the movie posts"},{"id":11,"group":1,"content":"features\/tableInKarate[1:6]","start":1706055401537,"end":1706055401539,"title":"features\/tableInKarate[1:6] 19:16:41.537-19:16:41.539 Table in KarateAPI"},{"id":12,"group":1,"content":"features\/tableInKarate[2:18]","start":1706055401542,"end":1706055401546,"title":"features\/tableInKarate[2:18] 19:16:41.542-19:16:41.546 Scenario2 - Table in KarateAPI"},{"id":13,"group":1,"content":"features\/tableInKarate[3:29]","start":1706055401550,"end":1706055401552,"title":"features\/tableInKarate[3:29] 19:16:41.550-19:16:41.552 Scenario3 - With Null"},{"id":14,"group":1,"content":"features\/usersInJsonPlaceholder[1:7]","start":1706055401597,"end":1706055401802,"title":"features\/usersInJsonPlaceholder[1:7] 19:16:41.597-19:16:41.802 Get all users and then get the first user by id"},{"id":15,"group":1,"content":"features\/usersInJsonPlaceholder[2.1:45]","start":1706055401810,"end":1706055401943,"title":"features\/usersInJsonPlaceholder[2.1:45] 19:16:41.810-19:16:41.943 create a user and then get it by id"},{"id":16,"group":1,"content":"features\/usersInJsonPlaceholder[2.2:46]","start":1706055401950,"end":1706055402055,"title":"features\/usersInJsonPlaceholder[2.2:46] 19:16:41.950-19:16:42.055 create a user and then get it by id"},{"id":17,"group":1,"content":"features\/usersInJsonPlaceholder[2.3:47]","start":1706055402063,"end":1706055402177,"title":"features\/usersInJsonPlaceholder[2.3:47] 19:16:42.063-19:16:42.177 create a user and then get it by id"},{"id":18,"group":1,"content":"features\/usersInJsonPlaceholder[2.4:48]","start":1706055402185,"end":1706055402298,"title":"features\/usersInJsonPlaceholder[2.4:48] 19:16:42.185-19:16:42.298 create a user and then get it by id"},{"id":19,"group":1,"content":"features\/usersInJsonPlaceholder[2.5:49]","start":1706055402303,"end":1706055402431,"title":"features\/usersInJsonPlaceholder[2.5:49] 19:16:42.303-19:16:42.431 create a user and then get it by id"},{"id":20,"group":1,"content":"features\/usersInJsonPlaceholder[2.6:50]","start":1706055402435,"end":1706055402558,"title":"features\/usersInJsonPlaceholder[2.6:50] 19:16:42.435-19:16:42.558 create a user and then get it by id"},{"id":21,"group":1,"content":"features\/usersInJsonPlaceholder[2.7:51]","start":1706055402563,"end":1706055402674,"title":"features\/usersInJsonPlaceholder[2.7:51] 19:16:42.563-19:16:42.674 create a user and then get it by id"},{"id":22,"group":1,"content":"features\/usersInJsonPlaceholder[3:54]","start":1706055402680,"end":1706055402816,"title":"features\/usersInJsonPlaceholder[3:54] 19:16:42.680-19:16:42.816 Checking the Site is reachable by iusing the Get method and response as 200 and OK"},{"id":23,"group":1,"content":"features\/usersInJsonPlaceholder[4:70]","start":1706055402820,"end":1706055403080,"title":"features\/usersInJsonPlaceholder[4:70] 19:16:42.820-19:16:43.080 Checking the Site is reachable by iusing the Get method and response as 200 and valdiating the response"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

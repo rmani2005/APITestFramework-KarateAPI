@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>Report-Name</td>
-      <td>23 Jan 2024, 15:51</td>
+      <td>23 Jan 2024, 19:18</td>
     </tr>
   </tbody>
 </table>
@@ -127,19 +127,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@regression</td>
-          <td      class="passed"    >45</td>
-          <td      class="failed"    >9</td>
-          <td     class="skipped"   >70</td>
+          <td      class="passed"    >124</td>
+          <td >0</td>
+          <td >0</td>
           <td >0</td>
           <td >0</td>
           <td class="total">124</td>
 
-          <td  class="passed"    >4</td>
-          <td  class="failed"    >9</td>
+          <td  class="passed"    >13</td>
+          <td >0</td>
           <td class="total">13</td>
 
-          <td class="duration" data-value="2788102544">2.788</td>
-          <td class="failed">Failed</td>
+          <td class="duration" data-value="4319513120">4.319</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -185,12 +185,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.211</span>
+  <span class="lead-duration duration">0.930</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">Create a post and then get it by id</span>
 
@@ -201,16 +201,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -220,7 +220,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -228,7 +228,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def postdata =</span>
 
-  <span class="lead-duration duration">0.016</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -295,7 +295,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">request postdata</span>
 
-  <span class="lead-duration duration">0.009</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -318,11 +318,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When failed">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">0.184</span>
+  <span class="lead-duration duration">0.645</span>
 
 </div>
 
@@ -330,19 +330,6 @@ $(document).ready(function() {
 
 
 
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
-          <a>http</a>
-      </div>
-      <div id="msg-4" class="collapse collapsable-details  in ">
-        <pre>http call failed after 115 milliseconds for url: http://192.168.0.55:3002/api/addPost
-org.apache.http.conn.HttpHostConnectException: Connect to 192.168.0.55:3002 [/192.168.0.55] failed: Connection refused (Connection refused)
-classpath:features/myportfolioSite-API.feature:22</pre>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -358,7 +345,7 @@ classpath:features/myportfolioSite-API.feature:22</pre>
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">status 200</span>
 
@@ -385,11 +372,11 @@ classpath:features/myportfolioSite-API.feature:22</pre>
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def idValue = response.insertedId</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -412,7 +399,7 @@ classpath:features/myportfolioSite-API.feature:22</pre>
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def ack = response.acknowledged</span>
 
@@ -439,7 +426,7 @@ classpath:features/myportfolioSite-API.feature:22</pre>
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">print 'Ack is: ', ack</span>
 
@@ -466,11 +453,11 @@ classpath:features/myportfolioSite-API.feature:22</pre>
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">match ack == true</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.016</span>
 
 </div>
 
@@ -493,7 +480,7 @@ classpath:features/myportfolioSite-API.feature:22</pre>
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">print 'Created id is: ', idValue</span>
 
@@ -520,7 +507,7 @@ classpath:features/myportfolioSite-API.feature:22</pre>
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">path 'getPost'</span>
 
@@ -547,7 +534,7 @@ classpath:features/myportfolioSite-API.feature:22</pre>
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">param id = idValue</span>
 
@@ -574,11 +561,11 @@ classpath:features/myportfolioSite-API.feature:22</pre>
       <div class="step">
 
 
-<div class="brief step-name-When skipped">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.257</span>
 
 </div>
 
@@ -601,7 +588,7 @@ classpath:features/myportfolioSite-API.feature:22</pre>
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">status 200</span>
 
@@ -628,11 +615,11 @@ classpath:features/myportfolioSite-API.feature:22</pre>
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">match response.title == &quot;selenium&quot;</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -655,11 +642,11 @@ classpath:features/myportfolioSite-API.feature:22</pre>
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">match response.content == &quot;Selenium is first in the list&quot;</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -707,12 +694,12 @@ classpath:features/myportfolioSite-API.feature:22</pre>
 </div>
 
 
-  <span class="lead-duration duration">0.211</span>
+  <span class="lead-duration duration">0.152</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-5">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">Create a post and then get it by id</span>
 
@@ -723,16 +710,16 @@ classpath:features/myportfolioSite-API.feature:22</pre>
   </span>
   <div class="description indention"></div>
 
-  <div id="element-5" class="collapse collapsable-details  in ">
+  <div id="element-4" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-6">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -742,7 +729,7 @@ classpath:features/myportfolioSite-API.feature:22</pre>
 
   </div>
 
-  <div id="steps-6" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-5" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -750,7 +737,7 @@ classpath:features/myportfolioSite-API.feature:22</pre>
   <span class="keyword indention">*</span>
   <span class="name">def postdata =</span>
 
-  <span class="lead-duration duration">0.016</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -764,10 +751,10 @@ classpath:features/myportfolioSite-API.feature:22</pre>
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
           <a>Doc string</a>
       </div>
-      <div id="msg-7" class="collapse collapsable-details">
+      <div id="msg-6" class="collapse collapsable-details">
         <pre>{
 				&quot;title&quot;: &quot;karateapi&quot;,
 				&quot;content&quot;: &quot;KarateAPI is on third&quot;
@@ -817,7 +804,7 @@ classpath:features/myportfolioSite-API.feature:22</pre>
   <span class="keyword indention">And</span>
   <span class="name">request postdata</span>
 
-  <span class="lead-duration duration">0.009</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -840,11 +827,11 @@ classpath:features/myportfolioSite-API.feature:22</pre>
       <div class="step">
 
 
-<div class="brief step-name-When failed">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">0.184</span>
+  <span class="lead-duration duration">0.072</span>
 
 </div>
 
@@ -852,19 +839,6 @@ classpath:features/myportfolioSite-API.feature:22</pre>
 
 
 
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-8">
-          <a>http</a>
-      </div>
-      <div id="msg-8" class="collapse collapsable-details  in ">
-        <pre>http call failed after 115 milliseconds for url: http://192.168.0.55:3002/api/addPost
-org.apache.http.conn.HttpHostConnectException: Connect to 192.168.0.55:3002 [/192.168.0.55] failed: Connection refused (Connection refused)
-classpath:features/myportfolioSite-API.feature:22</pre>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -880,7 +854,7 @@ classpath:features/myportfolioSite-API.feature:22</pre>
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">status 200</span>
 
@@ -907,7 +881,7 @@ classpath:features/myportfolioSite-API.feature:22</pre>
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def idValue = response.insertedId</span>
 
@@ -934,11 +908,11 @@ classpath:features/myportfolioSite-API.feature:22</pre>
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def ack = response.acknowledged</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -961,7 +935,7 @@ classpath:features/myportfolioSite-API.feature:22</pre>
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">print 'Ack is: ', ack</span>
 
@@ -988,7 +962,7 @@ classpath:features/myportfolioSite-API.feature:22</pre>
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">match ack == true</span>
 
@@ -1015,7 +989,7 @@ classpath:features/myportfolioSite-API.feature:22</pre>
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">print 'Created id is: ', idValue</span>
 
@@ -1042,7 +1016,7 @@ classpath:features/myportfolioSite-API.feature:22</pre>
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">path 'getPost'</span>
 
@@ -1069,7 +1043,7 @@ classpath:features/myportfolioSite-API.feature:22</pre>
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">param id = idValue</span>
 
@@ -1096,11 +1070,11 @@ classpath:features/myportfolioSite-API.feature:22</pre>
       <div class="step">
 
 
-<div class="brief step-name-When skipped">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.072</span>
 
 </div>
 
@@ -1123,7 +1097,7 @@ classpath:features/myportfolioSite-API.feature:22</pre>
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">status 200</span>
 
@@ -1150,11 +1124,11 @@ classpath:features/myportfolioSite-API.feature:22</pre>
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">match response.title == &quot;karateapi&quot;</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -1177,11 +1151,11 @@ classpath:features/myportfolioSite-API.feature:22</pre>
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">match response.content == &quot;KarateAPI is on third&quot;</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -1229,12 +1203,12 @@ classpath:features/myportfolioSite-API.feature:22</pre>
 </div>
 
 
-  <span class="lead-duration duration">0.211</span>
+  <span class="lead-duration duration">0.144</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-9">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">Create a post and then get it by id</span>
 
@@ -1245,16 +1219,16 @@ classpath:features/myportfolioSite-API.feature:22</pre>
   </span>
   <div class="description indention"></div>
 
-  <div id="element-9" class="collapse collapsable-details  in ">
+  <div id="element-7" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-10">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -1264,7 +1238,7 @@ classpath:features/myportfolioSite-API.feature:22</pre>
 
   </div>
 
-  <div id="steps-10" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-8" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -1272,7 +1246,7 @@ classpath:features/myportfolioSite-API.feature:22</pre>
   <span class="keyword indention">*</span>
   <span class="name">def postdata =</span>
 
-  <span class="lead-duration duration">0.016</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1286,10 +1260,10 @@ classpath:features/myportfolioSite-API.feature:22</pre>
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-11">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
           <a>Doc string</a>
       </div>
-      <div id="msg-11" class="collapse collapsable-details">
+      <div id="msg-9" class="collapse collapsable-details">
         <pre>{
 				&quot;title&quot;: &quot;cypress&quot;,
 				&quot;content&quot;: &quot;cypress is on second&quot;
@@ -1339,7 +1313,7 @@ classpath:features/myportfolioSite-API.feature:22</pre>
   <span class="keyword indention">And</span>
   <span class="name">request postdata</span>
 
-  <span class="lead-duration duration">0.009</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1362,11 +1336,11 @@ classpath:features/myportfolioSite-API.feature:22</pre>
       <div class="step">
 
 
-<div class="brief step-name-When failed">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">0.184</span>
+  <span class="lead-duration duration">0.072</span>
 
 </div>
 
@@ -1374,19 +1348,6 @@ classpath:features/myportfolioSite-API.feature:22</pre>
 
 
 
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-12">
-          <a>http</a>
-      </div>
-      <div id="msg-12" class="collapse collapsable-details  in ">
-        <pre>http call failed after 115 milliseconds for url: http://192.168.0.55:3002/api/addPost
-org.apache.http.conn.HttpHostConnectException: Connect to 192.168.0.55:3002 [/192.168.0.55] failed: Connection refused (Connection refused)
-classpath:features/myportfolioSite-API.feature:22</pre>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -1402,7 +1363,7 @@ classpath:features/myportfolioSite-API.feature:22</pre>
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">status 200</span>
 
@@ -1429,7 +1390,7 @@ classpath:features/myportfolioSite-API.feature:22</pre>
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def idValue = response.insertedId</span>
 
@@ -1456,7 +1417,7 @@ classpath:features/myportfolioSite-API.feature:22</pre>
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def ack = response.acknowledged</span>
 
@@ -1483,7 +1444,7 @@ classpath:features/myportfolioSite-API.feature:22</pre>
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">print 'Ack is: ', ack</span>
 
@@ -1510,7 +1471,7 @@ classpath:features/myportfolioSite-API.feature:22</pre>
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">match ack == true</span>
 
@@ -1537,7 +1498,7 @@ classpath:features/myportfolioSite-API.feature:22</pre>
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">print 'Created id is: ', idValue</span>
 
@@ -1564,7 +1525,7 @@ classpath:features/myportfolioSite-API.feature:22</pre>
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">path 'getPost'</span>
 
@@ -1591,7 +1552,7 @@ classpath:features/myportfolioSite-API.feature:22</pre>
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">param id = idValue</span>
 
@@ -1618,11 +1579,11 @@ classpath:features/myportfolioSite-API.feature:22</pre>
       <div class="step">
 
 
-<div class="brief step-name-When skipped">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.064</span>
 
 </div>
 
@@ -1645,7 +1606,7 @@ classpath:features/myportfolioSite-API.feature:22</pre>
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">status 200</span>
 
@@ -1672,11 +1633,11 @@ classpath:features/myportfolioSite-API.feature:22</pre>
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">match response.title == &quot;cypress&quot;</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -1699,11 +1660,11 @@ classpath:features/myportfolioSite-API.feature:22</pre>
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">match response.content == &quot;cypress is on second&quot;</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -1751,12 +1712,12 @@ classpath:features/myportfolioSite-API.feature:22</pre>
 </div>
 
 
-  <span class="lead-duration duration">0.003</span>
+  <span class="lead-duration duration">0.139</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-13">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-10">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Get all the post and then get the first user by id</span>
 
@@ -1767,16 +1728,16 @@ classpath:features/myportfolioSite-API.feature:22</pre>
   </span>
   <div class="description indention"></div>
 
-  <div id="element-13" class="collapse collapsable-details  in ">
+  <div id="element-10" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-14">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-11">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -1786,7 +1747,7 @@ classpath:features/myportfolioSite-API.feature:22</pre>
 
   </div>
 
-  <div id="steps-14" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-11" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -1817,11 +1778,11 @@ classpath:features/myportfolioSite-API.feature:22</pre>
       <div class="step">
 
 
-<div class="brief step-name-When failed">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.071</span>
 
 </div>
 
@@ -1829,19 +1790,6 @@ classpath:features/myportfolioSite-API.feature:22</pre>
 
 
 
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-15">
-          <a>http</a>
-      </div>
-      <div id="msg-15" class="collapse collapsable-details  in ">
-        <pre>http call failed after 2 milliseconds for url: http://192.168.0.55:3002/api/getPosts
-org.apache.http.conn.HttpHostConnectException: Connect to 192.168.0.55:3002 [/192.168.0.55] failed: Connection refused (Connection refused)
-classpath:features/myportfolioSite-API.feature:46</pre>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -1857,7 +1805,7 @@ classpath:features/myportfolioSite-API.feature:46</pre>
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">status 200</span>
 
@@ -1884,11 +1832,11 @@ classpath:features/myportfolioSite-API.feature:46</pre>
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def first = response[0]</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -1911,7 +1859,7 @@ classpath:features/myportfolioSite-API.feature:46</pre>
       <div class="step">
 
 
-<div class="brief step-name-Given skipped">
+<div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
   <span class="name">path 'getPost'</span>
 
@@ -1938,11 +1886,11 @@ classpath:features/myportfolioSite-API.feature:46</pre>
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">param id = first.id</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -1965,11 +1913,11 @@ classpath:features/myportfolioSite-API.feature:46</pre>
       <div class="step">
 
 
-<div class="brief step-name-When skipped">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.060</span>
 
 </div>
 
@@ -1992,7 +1940,7 @@ classpath:features/myportfolioSite-API.feature:46</pre>
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">status 200</span>
 
@@ -2019,11 +1967,11 @@ classpath:features/myportfolioSite-API.feature:46</pre>
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">print 'Response is: ', response</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -2071,12 +2019,12 @@ classpath:features/myportfolioSite-API.feature:46</pre>
 </div>
 
 
-  <span class="lead-duration duration">0.040</span>
+  <span class="lead-duration duration">0.146</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-16">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-12">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Create a post and then get it by id using the JSON Headers and reading JSON file</span>
 
@@ -2087,16 +2035,16 @@ classpath:features/myportfolioSite-API.feature:46</pre>
   </span>
   <div class="description indention"></div>
 
-  <div id="element-16" class="collapse collapsable-details  in ">
+  <div id="element-12" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-17">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-13">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -2106,7 +2054,7 @@ classpath:features/myportfolioSite-API.feature:46</pre>
 
   </div>
 
-  <div id="steps-17" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-13" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -2141,7 +2089,7 @@ classpath:features/myportfolioSite-API.feature:46</pre>
   <span class="keyword indention">*</span>
   <span class="name">configure headers = { 'Content-Type': 'application/json' }</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -2168,7 +2116,7 @@ classpath:features/myportfolioSite-API.feature:46</pre>
   <span class="keyword indention">*</span>
   <span class="name">json jsonCreateUser = read('../data/createPost.json')</span>
 
-  <span class="lead-duration duration">0.009</span>
+  <span class="lead-duration duration">0.004</span>
 
 </div>
 
@@ -2195,7 +2143,7 @@ classpath:features/myportfolioSite-API.feature:46</pre>
   <span class="keyword indention">*</span>
   <span class="name">print karate.pretty(jsonCreateUser)</span>
 
-  <span class="lead-duration duration">0.026</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -2245,11 +2193,11 @@ classpath:features/myportfolioSite-API.feature:46</pre>
       <div class="step">
 
 
-<div class="brief step-name-When failed">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.065</span>
 
 </div>
 
@@ -2257,19 +2205,6 @@ classpath:features/myportfolioSite-API.feature:46</pre>
 
 
 
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-18">
-          <a>http</a>
-      </div>
-      <div id="msg-18" class="collapse collapsable-details  in ">
-        <pre>http call failed after 2 milliseconds for url: http://192.168.0.55:3002/api/addPost
-org.apache.http.conn.HttpHostConnectException: Connect to 192.168.0.55:3002 [/192.168.0.55] failed: Connection refused (Connection refused)
-classpath:features/myportfolioSite-API.feature:65</pre>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -2285,7 +2220,7 @@ classpath:features/myportfolioSite-API.feature:65</pre>
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">status 200</span>
 
@@ -2312,7 +2247,7 @@ classpath:features/myportfolioSite-API.feature:65</pre>
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def idValue = response.insertedId</span>
 
@@ -2339,7 +2274,7 @@ classpath:features/myportfolioSite-API.feature:65</pre>
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def ack = response.acknowledged</span>
 
@@ -2366,7 +2301,7 @@ classpath:features/myportfolioSite-API.feature:65</pre>
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">print 'Ack is: ', ack</span>
 
@@ -2393,7 +2328,7 @@ classpath:features/myportfolioSite-API.feature:65</pre>
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">match ack == true</span>
 
@@ -2420,7 +2355,7 @@ classpath:features/myportfolioSite-API.feature:65</pre>
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">print 'Created id is: ', idValue</span>
 
@@ -2447,7 +2382,7 @@ classpath:features/myportfolioSite-API.feature:65</pre>
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">path 'getPost'</span>
 
@@ -2474,7 +2409,7 @@ classpath:features/myportfolioSite-API.feature:65</pre>
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">param id = idValue</span>
 
@@ -2501,11 +2436,11 @@ classpath:features/myportfolioSite-API.feature:65</pre>
       <div class="step">
 
 
-<div class="brief step-name-When skipped">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.066</span>
 
 </div>
 
@@ -2528,7 +2463,7 @@ classpath:features/myportfolioSite-API.feature:65</pre>
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">status 200</span>
 
@@ -2555,11 +2490,11 @@ classpath:features/myportfolioSite-API.feature:65</pre>
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">match response.title == jsonCreateUser.title</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -2582,7 +2517,7 @@ classpath:features/myportfolioSite-API.feature:65</pre>
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">match response.content == jsonCreateUser.content</span>
 
@@ -2636,10 +2571,10 @@ classpath:features/myportfolioSite-API.feature:65</pre>
 </div>
 
 
-  <span class="lead-duration duration">1.666</span>
+  <span class="lead-duration duration">1.629</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-19">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-14">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
@@ -2652,14 +2587,14 @@ classpath:features/myportfolioSite-API.feature:65</pre>
   </span>
   <div class="description indention"></div>
 
-  <div id="element-19" class="collapse collapsable-details ">
+  <div id="element-14" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-20">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-15">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -2671,7 +2606,7 @@ classpath:features/myportfolioSite-API.feature:65</pre>
 
   </div>
 
-  <div id="steps-20" class="inner-level collapse collapsable-details ">
+  <div id="steps-15" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -2733,7 +2668,7 @@ classpath:features/myportfolioSite-API.feature:65</pre>
   <span class="keyword indention">*</span>
   <span class="name">form field grant_type = 'password'</span>
 
-  <span class="lead-duration duration">0.066</span>
+  <span class="lead-duration duration">0.043</span>
 
 </div>
 
@@ -2868,7 +2803,7 @@ classpath:features/myportfolioSite-API.feature:65</pre>
   <span class="keyword indention">*</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">1.042</span>
+  <span class="lead-duration duration">1.005</span>
 
 </div>
 
@@ -2976,7 +2911,7 @@ classpath:features/myportfolioSite-API.feature:65</pre>
   <span class="keyword indention">*</span>
   <span class="name">header Authorization = 'Bearer ' + accessToken</span>
 
-  <span class="lead-duration duration">0.004</span>
+  <span class="lead-duration duration">0.003</span>
 
 </div>
 
@@ -3004,7 +2939,7 @@ classpath:features/myportfolioSite-API.feature:65</pre>
   <span class="keyword indention">*</span>
   <span class="name">method get</span>
 
-  <span class="lead-duration duration">0.547</span>
+  <span class="lead-duration duration">0.569</span>
 
 </div>
 
@@ -3106,12 +3041,12 @@ classpath:features/myportfolioSite-API.feature:65</pre>
 </div>
 
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.351</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-21">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-16">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Get all the movie posts and then get the first user by id</span>
 
@@ -3122,16 +3057,16 @@ classpath:features/myportfolioSite-API.feature:65</pre>
   </span>
   <div class="description indention"></div>
 
-  <div id="element-21" class="collapse collapsable-details  in ">
+  <div id="element-16" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-22">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-17">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -3141,7 +3076,7 @@ classpath:features/myportfolioSite-API.feature:65</pre>
 
   </div>
 
-  <div id="steps-22" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-17" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -3172,11 +3107,11 @@ classpath:features/myportfolioSite-API.feature:65</pre>
       <div class="step">
 
 
-<div class="brief step-name-When failed">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.288</span>
 
 </div>
 
@@ -3184,19 +3119,6 @@ classpath:features/myportfolioSite-API.feature:65</pre>
 
 
 
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-23">
-          <a>http</a>
-      </div>
-      <div id="msg-23" class="collapse collapsable-details  in ">
-        <pre>http call failed after 1 milliseconds for url: http://192.168.0.55:3002/api/movies
-org.apache.http.conn.HttpHostConnectException: Connect to 192.168.0.55:3002 [/192.168.0.55] failed: Connection refused (Connection refused)
-classpath:features/myportfolioSite-movie-API.feature:13</pre>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -3212,7 +3134,7 @@ classpath:features/myportfolioSite-movie-API.feature:13</pre>
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">status 200</span>
 
@@ -3239,7 +3161,7 @@ classpath:features/myportfolioSite-movie-API.feature:13</pre>
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def first = response[0]</span>
 
@@ -3266,7 +3188,7 @@ classpath:features/myportfolioSite-movie-API.feature:13</pre>
       <div class="step">
 
 
-<div class="brief step-name-Given skipped">
+<div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
   <span class="name">path 'getPost'</span>
 
@@ -3293,7 +3215,7 @@ classpath:features/myportfolioSite-movie-API.feature:13</pre>
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">param id = first.id</span>
 
@@ -3320,11 +3242,11 @@ classpath:features/myportfolioSite-movie-API.feature:13</pre>
       <div class="step">
 
 
-<div class="brief step-name-When skipped">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.060</span>
 
 </div>
 
@@ -3347,7 +3269,7 @@ classpath:features/myportfolioSite-movie-API.feature:13</pre>
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">status 200</span>
 
@@ -3374,7 +3296,7 @@ classpath:features/myportfolioSite-movie-API.feature:13</pre>
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">print 'Response is: ', response</span>
 
@@ -3426,12 +3348,12 @@ classpath:features/myportfolioSite-movie-API.feature:13</pre>
 </div>
 
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.093</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-24">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-18">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Get all the movie posts</span>
 
@@ -3442,16 +3364,16 @@ classpath:features/myportfolioSite-movie-API.feature:13</pre>
   </span>
   <div class="description indention"></div>
 
-  <div id="element-24" class="collapse collapsable-details  in ">
+  <div id="element-18" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-25">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-19">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -3461,7 +3383,7 @@ classpath:features/myportfolioSite-movie-API.feature:13</pre>
 
   </div>
 
-  <div id="steps-25" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-19" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -3492,11 +3414,11 @@ classpath:features/myportfolioSite-movie-API.feature:13</pre>
       <div class="step">
 
 
-<div class="brief step-name-When failed">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.092</span>
 
 </div>
 
@@ -3504,19 +3426,6 @@ classpath:features/myportfolioSite-movie-API.feature:13</pre>
 
 
 
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-26">
-          <a>http</a>
-      </div>
-      <div id="msg-26" class="collapse collapsable-details  in ">
-        <pre>http call failed after 2 milliseconds for url: http://192.168.0.55:3002/api/movies
-org.apache.http.conn.HttpHostConnectException: Connect to 192.168.0.55:3002 [/192.168.0.55] failed: Connection refused (Connection refused)
-classpath:features/myportfolioSite-movie-API.feature:27</pre>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -3532,7 +3441,7 @@ classpath:features/myportfolioSite-movie-API.feature:27</pre>
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">status 200</span>
 
@@ -3559,7 +3468,7 @@ classpath:features/myportfolioSite-movie-API.feature:27</pre>
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">print 'Response is: ', response</span>
 
@@ -3612,12 +3521,12 @@ classpath:features/myportfolioSite-movie-API.feature:27</pre>
 </div>
 
 
-  <span class="lead-duration duration">0.192</span>
+  <span class="lead-duration duration">0.646</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-27">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-20">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Checking the Site is reachable by iusing the Get method and response as 200 and OK</span>
 
@@ -3628,16 +3537,16 @@ classpath:features/myportfolioSite-movie-API.feature:27</pre>
   </span>
   <div class="description indention"></div>
 
-  <div id="element-27" class="collapse collapsable-details  in ">
+  <div id="element-20" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-28">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-21">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -3647,7 +3556,7 @@ classpath:features/myportfolioSite-movie-API.feature:27</pre>
 
   </div>
 
-  <div id="steps-28" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-21" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -3655,7 +3564,7 @@ classpath:features/myportfolioSite-movie-API.feature:27</pre>
   <span class="keyword indention">Given</span>
   <span class="name">path 'getPosts'</span>
 
-  <span class="lead-duration duration">0.006</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -3678,11 +3587,11 @@ classpath:features/myportfolioSite-movie-API.feature:27</pre>
       <div class="step">
 
 
-<div class="brief step-name-When failed">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">method GET</span>
 
-  <span class="lead-duration duration">0.186</span>
+  <span class="lead-duration duration">0.618</span>
 
 </div>
 
@@ -3690,19 +3599,6 @@ classpath:features/myportfolioSite-movie-API.feature:27</pre>
 
 
 
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-29">
-          <a>http</a>
-      </div>
-      <div id="msg-29" class="collapse collapsable-details  in ">
-        <pre>http call failed after 171 milliseconds for url: http://192.168.0.55:3002/api/getPosts
-org.apache.http.conn.HttpHostConnectException: Connect to 192.168.0.55:3002 [/192.168.0.55] failed: Connection refused (Connection refused)
-classpath:features/myBioSitePerformanceCheck.feature:18</pre>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -3718,7 +3614,7 @@ classpath:features/myBioSitePerformanceCheck.feature:18</pre>
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">status 200</span>
 
@@ -3745,11 +3641,11 @@ classpath:features/myBioSitePerformanceCheck.feature:18</pre>
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">print response</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.007</span>
 
 </div>
 
@@ -3772,11 +3668,11 @@ classpath:features/myBioSitePerformanceCheck.feature:18</pre>
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">print karate.pretty(response)</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.020</span>
 
 </div>
 
@@ -3825,12 +3721,12 @@ classpath:features/myBioSitePerformanceCheck.feature:18</pre>
 </div>
 
 
-  <span class="lead-duration duration">0.193</span>
+  <span class="lead-duration duration">0.073</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-30">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-22">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Checking the Site is reachable by iusing the Get method and response as 200 and OK</span>
 
@@ -3841,16 +3737,16 @@ classpath:features/myBioSitePerformanceCheck.feature:18</pre>
   </span>
   <div class="description indention"></div>
 
-  <div id="element-30" class="collapse collapsable-details  in ">
+  <div id="element-22" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-31">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-23">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -3860,7 +3756,7 @@ classpath:features/myBioSitePerformanceCheck.feature:18</pre>
 
   </div>
 
-  <div id="steps-31" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-23" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -3868,7 +3764,7 @@ classpath:features/myBioSitePerformanceCheck.feature:18</pre>
   <span class="keyword indention">Given</span>
   <span class="name">path 'getPosts'</span>
 
-  <span class="lead-duration duration">0.007</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -3891,11 +3787,11 @@ classpath:features/myBioSitePerformanceCheck.feature:18</pre>
       <div class="step">
 
 
-<div class="brief step-name-When failed">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">method GET</span>
 
-  <span class="lead-duration duration">0.185</span>
+  <span class="lead-duration duration">0.064</span>
 
 </div>
 
@@ -3903,19 +3799,6 @@ classpath:features/myBioSitePerformanceCheck.feature:18</pre>
 
 
 
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-32">
-          <a>http</a>
-      </div>
-      <div id="msg-32" class="collapse collapsable-details  in ">
-        <pre>http call failed after 171 milliseconds for url: http://192.168.0.55:3002/api/getPosts
-org.apache.http.conn.HttpHostConnectException: Connect to 192.168.0.55:3002 [/192.168.0.55] failed: Connection refused (Connection refused)
-classpath:features/myBioSitePerformanceCheck.feature:29</pre>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -3931,7 +3814,7 @@ classpath:features/myBioSitePerformanceCheck.feature:29</pre>
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">status 200</span>
 
@@ -3958,7 +3841,7 @@ classpath:features/myBioSitePerformanceCheck.feature:29</pre>
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">print response</span>
 
@@ -3985,11 +3868,11 @@ classpath:features/myBioSitePerformanceCheck.feature:29</pre>
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">print karate.pretty(response)</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.008</span>
 
 </div>
 
@@ -4033,10 +3916,10 @@ classpath:features/myBioSitePerformanceCheck.feature:29</pre>
 </div>
 
 
-  <span class="lead-duration duration">0.016</span>
+  <span class="lead-duration duration">0.004</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-33">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-24">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
@@ -4049,14 +3932,14 @@ classpath:features/myBioSitePerformanceCheck.feature:29</pre>
   </span>
   <div class="description indention"></div>
 
-  <div id="element-33" class="collapse collapsable-details ">
+  <div id="element-24" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-34">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-25">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -4068,7 +3951,7 @@ classpath:features/myBioSitePerformanceCheck.feature:29</pre>
 
   </div>
 
-  <div id="steps-34" class="inner-level collapse collapsable-details ">
+  <div id="steps-25" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -4076,7 +3959,7 @@ classpath:features/myBioSitePerformanceCheck.feature:29</pre>
   <span class="keyword indention">*</span>
   <span class="name">table cats</span>
 
-  <span class="lead-duration duration">0.004</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -4121,7 +4004,7 @@ classpath:features/myBioSitePerformanceCheck.feature:29</pre>
   <span class="keyword indention">*</span>
   <span class="name">match cats == [{name: 'Bob', age: 2}, {name: 'Wild', age: 4}, {name: 'Nyan', age: 3}]</span>
 
-  <span class="lead-duration duration">0.011</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -4165,10 +4048,10 @@ classpath:features/myBioSitePerformanceCheck.feature:29</pre>
 </div>
 
 
-  <span class="lead-duration duration">0.019</span>
+  <span class="lead-duration duration">0.004</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-35">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-26">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
@@ -4181,14 +4064,14 @@ classpath:features/myBioSitePerformanceCheck.feature:29</pre>
   </span>
   <div class="description indention"></div>
 
-  <div id="element-35" class="collapse collapsable-details ">
+  <div id="element-26" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-36">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-27">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -4200,7 +4083,7 @@ classpath:features/myBioSitePerformanceCheck.feature:29</pre>
 
   </div>
 
-  <div id="steps-36" class="inner-level collapse collapsable-details ">
+  <div id="steps-27" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -4262,7 +4145,7 @@ classpath:features/myBioSitePerformanceCheck.feature:29</pre>
   <span class="keyword indention">*</span>
   <span class="name">table json</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -4303,7 +4186,7 @@ classpath:features/myBioSitePerformanceCheck.feature:29</pre>
   <span class="keyword indention">*</span>
   <span class="name">match json == [{ foo: 'hello', bar: { baz: 1 } }, { foo: 'world', bar: ['baz', 'ban'] }]</span>
 
-  <span class="lead-duration duration">0.011</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -4330,7 +4213,7 @@ classpath:features/myBioSitePerformanceCheck.feature:29</pre>
   <span class="keyword indention">*</span>
   <span class="name">print karate.pretty(json)</span>
 
-  <span class="lead-duration duration">0.003</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -4374,10 +4257,10 @@ classpath:features/myBioSitePerformanceCheck.feature:29</pre>
 </div>
 
 
-  <span class="lead-duration duration">0.019</span>
+  <span class="lead-duration duration">0.003</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-37">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-28">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
@@ -4390,14 +4273,14 @@ classpath:features/myBioSitePerformanceCheck.feature:29</pre>
   </span>
   <div class="description indention"></div>
 
-  <div id="element-37" class="collapse collapsable-details ">
+  <div id="element-28" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-38">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-29">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -4409,7 +4292,7 @@ classpath:features/myBioSitePerformanceCheck.feature:29</pre>
 
   </div>
 
-  <div id="steps-38" class="inner-level collapse collapsable-details ">
+  <div id="steps-29" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -4444,7 +4327,7 @@ classpath:features/myBioSitePerformanceCheck.feature:29</pre>
   <span class="keyword indention">*</span>
   <span class="name">table json</span>
 
-  <span class="lead-duration duration">0.004</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -4489,7 +4372,7 @@ classpath:features/myBioSitePerformanceCheck.feature:29</pre>
   <span class="keyword indention">*</span>
   <span class="name">match json == [{ foo: 'hello' }, { bar: null }, { foo: 'world' }]</span>
 
-  <span class="lead-duration duration">0.011</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -4516,7 +4399,7 @@ classpath:features/myBioSitePerformanceCheck.feature:29</pre>
   <span class="keyword indention">*</span>
   <span class="name">print karate.pretty(json)</span>
 
-  <span class="lead-duration duration">0.003</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
