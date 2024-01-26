@@ -28,7 +28,7 @@ pipeline
          {
             steps 
             {
-                 build job: "TestAutomationframework-Cypress", wait: true   
+                 build job: "TestAutomationframework-Cypress", wait: false   
             }
     		        
             post 
