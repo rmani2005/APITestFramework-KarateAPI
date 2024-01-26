@@ -21,14 +21,16 @@ pipeline
                 //env.module
                 //env.exeType
                 //env.
-                sh 'mvn clean test -Dtest=TestRunnerCucumberReport -Dmaven.test.failure.ignore=true'
-                
-        
+                sh 'mvn clean test -Dtest=TestRunnerCucumberReport -Dmaven.test.failure.ignore=true' 
             }
          }
-         stage ('Starting ART job') 
+         stage ('Starting Next job') 
          {
-    		build job: 'TestAutomationframework-Cypress'            
+            steps 
+            {
+                 build job: "TestAutomationframework-Cypress", wait: true   
+            }
+    		        
             post 
             {
   	 			success 
