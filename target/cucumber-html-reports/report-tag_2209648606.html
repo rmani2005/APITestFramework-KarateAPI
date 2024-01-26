@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>Report-Name</td>
-      <td>23 Jan 2024, 19:18</td>
+      <td>25 Jan 2024, 23:35</td>
     </tr>
   </tbody>
 </table>
@@ -127,19 +127,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@core</td>
-          <td      class="passed"    >113</td>
-          <td >0</td>
-          <td >0</td>
+          <td      class="passed"    >43</td>
+          <td      class="failed"    >9</td>
+          <td     class="skipped"   >61</td>
           <td >0</td>
           <td >0</td>
           <td class="total">113</td>
 
-          <td  class="passed"    >10</td>
-          <td >0</td>
+          <td  class="passed"    >1</td>
+          <td  class="failed"    >9</td>
           <td class="total">10</td>
 
-          <td class="duration" data-value="4307567932">4.307</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="2869322758">2.869</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -185,12 +185,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.930</span>
+  <span class="lead-duration duration">0.084</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">Create a post and then get it by id</span>
 
@@ -201,16 +201,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -220,7 +220,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details ">
+  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
@@ -322,7 +322,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">0.645</span>
+  <span class="lead-duration duration">0.083</span>
 
 </div>
 
@@ -345,9 +345,55 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then failed">
   <span class="keyword indention">Then</span>
   <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
+          <a>status</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details  in ">
+        <pre>status code was: 503, expected: 200, response time in milliseconds: 62, url: http://manikandanravi.in/api/addPost, response: 
+&lt;html&gt;
+&lt;head&gt;&lt;title&gt;503 Service Temporarily Unavailable&lt;/title&gt;&lt;/head&gt;
+&lt;body&gt;
+&lt;center&gt;&lt;h1&gt;503 Service Temporarily Unavailable&lt;/h1&gt;&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+classpath:features/myportfolioSite-API.feature:23</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def idValue = response.insertedId</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -372,34 +418,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def idValue = response.insertedId</span>
-
-  <span class="lead-duration duration">0.001</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
+<div class="brief step-name-* skipped">
   <span class="keyword indention">*</span>
   <span class="name">def ack = response.acknowledged</span>
 
@@ -426,7 +445,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* passed">
+<div class="brief step-name-* skipped">
   <span class="keyword indention">*</span>
   <span class="name">print 'Ack is: ', ack</span>
 
@@ -453,11 +472,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* passed">
+<div class="brief step-name-* skipped">
   <span class="keyword indention">*</span>
   <span class="name">match ack == true</span>
 
-  <span class="lead-duration duration">0.016</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -480,7 +499,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* passed">
+<div class="brief step-name-* skipped">
   <span class="keyword indention">*</span>
   <span class="name">print 'Created id is: ', idValue</span>
 
@@ -507,7 +526,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">path 'getPost'</span>
 
@@ -534,7 +553,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">param id = idValue</span>
 
@@ -561,11 +580,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When skipped">
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
 
-  <span class="lead-duration duration">0.257</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -588,7 +607,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">status 200</span>
 
@@ -615,11 +634,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">match response.title == &quot;selenium&quot;</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -642,11 +661,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">match response.content == &quot;Selenium is first in the list&quot;</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -694,12 +713,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.152</span>
+  <span class="lead-duration duration">0.061</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-5">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">Create a post and then get it by id</span>
 
@@ -710,16 +729,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-4" class="collapse collapsable-details ">
+  <div id="element-5" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-6">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -729,7 +748,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-5" class="inner-level collapse collapsable-details ">
+  <div id="steps-6" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
@@ -751,10 +770,10 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
           <a>Doc string</a>
       </div>
-      <div id="msg-6" class="collapse collapsable-details">
+      <div id="msg-7" class="collapse collapsable-details">
         <pre>{
 				&quot;title&quot;: &quot;karateapi&quot;,
 				&quot;content&quot;: &quot;KarateAPI is on third&quot;
@@ -831,7 +850,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">0.072</span>
+  <span class="lead-duration duration">0.060</span>
 
 </div>
 
@@ -854,7 +873,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then failed">
   <span class="keyword indention">Then</span>
   <span class="name">status 200</span>
 
@@ -867,6 +886,25 @@ $(document).ready(function() {
 
 
 
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-8">
+          <a>status</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details  in ">
+        <pre>status code was: 503, expected: 200, response time in milliseconds: 57, url: http://manikandanravi.in/api/addPost, response: 
+&lt;html&gt;
+&lt;head&gt;&lt;title&gt;503 Service Temporarily Unavailable&lt;/title&gt;&lt;/head&gt;
+&lt;body&gt;
+&lt;center&gt;&lt;h1&gt;503 Service Temporarily Unavailable&lt;/h1&gt;&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+classpath:features/myportfolioSite-API.feature:23</pre>
+      </div>
+    </div>
+  </div>
+
 
 
 
@@ -881,7 +919,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* passed">
+<div class="brief step-name-* skipped">
   <span class="keyword indention">*</span>
   <span class="name">def idValue = response.insertedId</span>
 
@@ -908,11 +946,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* passed">
+<div class="brief step-name-* skipped">
   <span class="keyword indention">*</span>
   <span class="name">def ack = response.acknowledged</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -935,7 +973,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* passed">
+<div class="brief step-name-* skipped">
   <span class="keyword indention">*</span>
   <span class="name">print 'Ack is: ', ack</span>
 
@@ -962,7 +1000,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* passed">
+<div class="brief step-name-* skipped">
   <span class="keyword indention">*</span>
   <span class="name">match ack == true</span>
 
@@ -989,7 +1027,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* passed">
+<div class="brief step-name-* skipped">
   <span class="keyword indention">*</span>
   <span class="name">print 'Created id is: ', idValue</span>
 
@@ -1016,7 +1054,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">path 'getPost'</span>
 
@@ -1043,7 +1081,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">param id = idValue</span>
 
@@ -1070,11 +1108,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When skipped">
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
 
-  <span class="lead-duration duration">0.072</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1097,7 +1135,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">status 200</span>
 
@@ -1124,11 +1162,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">match response.title == &quot;karateapi&quot;</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1151,11 +1189,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">match response.content == &quot;KarateAPI is on third&quot;</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1203,12 +1241,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.144</span>
+  <span class="lead-duration duration">0.056</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-9">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">Create a post and then get it by id</span>
 
@@ -1219,16 +1257,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-7" class="collapse collapsable-details ">
+  <div id="element-9" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-10">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -1238,7 +1276,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-8" class="inner-level collapse collapsable-details ">
+  <div id="steps-10" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
@@ -1260,10 +1298,10 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-11">
           <a>Doc string</a>
       </div>
-      <div id="msg-9" class="collapse collapsable-details">
+      <div id="msg-11" class="collapse collapsable-details">
         <pre>{
 				&quot;title&quot;: &quot;cypress&quot;,
 				&quot;content&quot;: &quot;cypress is on second&quot;
@@ -1340,7 +1378,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">0.072</span>
+  <span class="lead-duration duration">0.056</span>
 
 </div>
 
@@ -1363,7 +1401,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then failed">
   <span class="keyword indention">Then</span>
   <span class="name">status 200</span>
 
@@ -1376,6 +1414,25 @@ $(document).ready(function() {
 
 
 
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-12">
+          <a>status</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details  in ">
+        <pre>status code was: 503, expected: 200, response time in milliseconds: 55, url: http://manikandanravi.in/api/addPost, response: 
+&lt;html&gt;
+&lt;head&gt;&lt;title&gt;503 Service Temporarily Unavailable&lt;/title&gt;&lt;/head&gt;
+&lt;body&gt;
+&lt;center&gt;&lt;h1&gt;503 Service Temporarily Unavailable&lt;/h1&gt;&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+classpath:features/myportfolioSite-API.feature:23</pre>
+      </div>
+    </div>
+  </div>
+
 
 
 
@@ -1390,7 +1447,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* passed">
+<div class="brief step-name-* skipped">
   <span class="keyword indention">*</span>
   <span class="name">def idValue = response.insertedId</span>
 
@@ -1417,7 +1474,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* passed">
+<div class="brief step-name-* skipped">
   <span class="keyword indention">*</span>
   <span class="name">def ack = response.acknowledged</span>
 
@@ -1444,7 +1501,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* passed">
+<div class="brief step-name-* skipped">
   <span class="keyword indention">*</span>
   <span class="name">print 'Ack is: ', ack</span>
 
@@ -1471,7 +1528,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* passed">
+<div class="brief step-name-* skipped">
   <span class="keyword indention">*</span>
   <span class="name">match ack == true</span>
 
@@ -1498,7 +1555,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* passed">
+<div class="brief step-name-* skipped">
   <span class="keyword indention">*</span>
   <span class="name">print 'Created id is: ', idValue</span>
 
@@ -1525,7 +1582,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">path 'getPost'</span>
 
@@ -1552,7 +1609,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">param id = idValue</span>
 
@@ -1579,11 +1636,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When skipped">
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
 
-  <span class="lead-duration duration">0.064</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1606,7 +1663,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">status 200</span>
 
@@ -1633,11 +1690,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">match response.title == &quot;cypress&quot;</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1660,11 +1717,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">match response.content == &quot;cypress is on second&quot;</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1712,12 +1769,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.139</span>
+  <span class="lead-duration duration">0.066</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-10">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-13">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Get all the post and then get the first user by id</span>
 
@@ -1728,16 +1785,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-10" class="collapse collapsable-details ">
+  <div id="element-13" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-11">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-14">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -1747,7 +1804,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-11" class="inner-level collapse collapsable-details ">
+  <div id="steps-14" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
@@ -1782,7 +1839,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
 
-  <span class="lead-duration duration">0.071</span>
+  <span class="lead-duration duration">0.066</span>
 
 </div>
 
@@ -1805,9 +1862,55 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then failed">
   <span class="keyword indention">Then</span>
   <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-15">
+          <a>status</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details  in ">
+        <pre>status code was: 503, expected: 200, response time in milliseconds: 64, url: http://manikandanravi.in/api/getPosts, response: 
+&lt;html&gt;
+&lt;head&gt;&lt;title&gt;503 Service Temporarily Unavailable&lt;/title&gt;&lt;/head&gt;
+&lt;body&gt;
+&lt;center&gt;&lt;h1&gt;503 Service Temporarily Unavailable&lt;/h1&gt;&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+classpath:features/myportfolioSite-API.feature:47</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def first = response[0]</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -1832,34 +1935,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def first = response[0]</span>
-
-  <span class="lead-duration duration">0.002</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Given passed">
+<div class="brief step-name-Given skipped">
   <span class="keyword indention">Given</span>
   <span class="name">path 'getPost'</span>
 
@@ -1886,11 +1962,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">param id = first.id</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1913,11 +1989,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When skipped">
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
 
-  <span class="lead-duration duration">0.060</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1940,7 +2016,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">status 200</span>
 
@@ -1967,11 +2043,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">print 'Response is: ', response</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -2019,12 +2095,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.146</span>
+  <span class="lead-duration duration">0.089</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-12">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-16">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Create a post and then get it by id using the JSON Headers and reading JSON file</span>
 
@@ -2035,16 +2111,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-12" class="collapse collapsable-details ">
+  <div id="element-16" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-13">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-17">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -2054,7 +2130,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-13" class="inner-level collapse collapsable-details ">
+  <div id="steps-17" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
@@ -2116,7 +2192,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">json jsonCreateUser = read('../data/createPost.json')</span>
 
-  <span class="lead-duration duration">0.004</span>
+  <span class="lead-duration duration">0.005</span>
 
 </div>
 
@@ -2143,7 +2219,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">print karate.pretty(jsonCreateUser)</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.011</span>
 
 </div>
 
@@ -2197,7 +2273,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">0.065</span>
+  <span class="lead-duration duration">0.071</span>
 
 </div>
 
@@ -2220,7 +2296,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then failed">
   <span class="keyword indention">Then</span>
   <span class="name">status 200</span>
 
@@ -2233,6 +2309,25 @@ $(document).ready(function() {
 
 
 
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-18">
+          <a>status</a>
+      </div>
+      <div id="msg-18" class="collapse collapsable-details  in ">
+        <pre>status code was: 503, expected: 200, response time in milliseconds: 69, url: http://manikandanravi.in/api/addPost, response: 
+&lt;html&gt;
+&lt;head&gt;&lt;title&gt;503 Service Temporarily Unavailable&lt;/title&gt;&lt;/head&gt;
+&lt;body&gt;
+&lt;center&gt;&lt;h1&gt;503 Service Temporarily Unavailable&lt;/h1&gt;&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+classpath:features/myportfolioSite-API.feature:66</pre>
+      </div>
+    </div>
+  </div>
+
 
 
 
@@ -2247,7 +2342,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* passed">
+<div class="brief step-name-* skipped">
   <span class="keyword indention">*</span>
   <span class="name">def idValue = response.insertedId</span>
 
@@ -2274,7 +2369,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* passed">
+<div class="brief step-name-* skipped">
   <span class="keyword indention">*</span>
   <span class="name">def ack = response.acknowledged</span>
 
@@ -2301,7 +2396,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* passed">
+<div class="brief step-name-* skipped">
   <span class="keyword indention">*</span>
   <span class="name">print 'Ack is: ', ack</span>
 
@@ -2328,7 +2423,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* passed">
+<div class="brief step-name-* skipped">
   <span class="keyword indention">*</span>
   <span class="name">match ack == true</span>
 
@@ -2355,7 +2450,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* passed">
+<div class="brief step-name-* skipped">
   <span class="keyword indention">*</span>
   <span class="name">print 'Created id is: ', idValue</span>
 
@@ -2382,7 +2477,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">path 'getPost'</span>
 
@@ -2409,7 +2504,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">param id = idValue</span>
 
@@ -2436,11 +2531,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When skipped">
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
 
-  <span class="lead-duration duration">0.066</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -2463,7 +2558,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">status 200</span>
 
@@ -2490,11 +2585,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">match response.title == jsonCreateUser.title</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -2517,7 +2612,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">match response.content == jsonCreateUser.content</span>
 
@@ -2571,10 +2666,10 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">1.629</span>
+  <span class="lead-duration duration">1.973</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-14">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-19">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
@@ -2587,14 +2682,14 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-14" class="collapse collapsable-details ">
+  <div id="element-19" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-15">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-20">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -2606,7 +2701,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-15" class="inner-level collapse collapsable-details ">
+  <div id="steps-20" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -2614,7 +2709,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">url 'https://authorization-server.com/authorize?response_type=code&amp;client_id=nAvGpY9lnNWbWxAQ-oC88mYV&amp;redirect_uri=https://www.oauth.com/playground/authorization-code.html&amp;scope=photo+offline_access&amp;state=_tbpMAFLonX2UgFZ'</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -2668,7 +2763,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">form field grant_type = 'password'</span>
 
-  <span class="lead-duration duration">0.043</span>
+  <span class="lead-duration duration">0.035</span>
 
 </div>
 
@@ -2803,7 +2898,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">1.005</span>
+  <span class="lead-duration duration">1.380</span>
 
 </div>
 
@@ -2911,7 +3006,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">header Authorization = 'Bearer ' + accessToken</span>
 
-  <span class="lead-duration duration">0.003</span>
+  <span class="lead-duration duration">0.004</span>
 
 </div>
 
@@ -2939,7 +3034,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">method get</span>
 
-  <span class="lead-duration duration">0.569</span>
+  <span class="lead-duration duration">0.545</span>
 
 </div>
 
@@ -3041,12 +3136,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.351</span>
+  <span class="lead-duration duration">0.061</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-16">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-21">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Get all the movie posts and then get the first user by id</span>
 
@@ -3057,16 +3152,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-16" class="collapse collapsable-details ">
+  <div id="element-21" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-17">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-22">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -3076,7 +3171,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-17" class="inner-level collapse collapsable-details ">
+  <div id="steps-22" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
@@ -3111,7 +3206,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
 
-  <span class="lead-duration duration">0.288</span>
+  <span class="lead-duration duration">0.061</span>
 
 </div>
 
@@ -3134,7 +3229,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then failed">
   <span class="keyword indention">Then</span>
   <span class="name">status 200</span>
 
@@ -3147,6 +3242,25 @@ $(document).ready(function() {
 
 
 
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-23">
+          <a>status</a>
+      </div>
+      <div id="msg-23" class="collapse collapsable-details  in ">
+        <pre>status code was: 503, expected: 200, response time in milliseconds: 60, url: http://manikandanravi.in/api/movies, response: 
+&lt;html&gt;
+&lt;head&gt;&lt;title&gt;503 Service Temporarily Unavailable&lt;/title&gt;&lt;/head&gt;
+&lt;body&gt;
+&lt;center&gt;&lt;h1&gt;503 Service Temporarily Unavailable&lt;/h1&gt;&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+classpath:features/myportfolioSite-movie-API.feature:14</pre>
+      </div>
+    </div>
+  </div>
+
 
 
 
@@ -3161,7 +3275,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* passed">
+<div class="brief step-name-* skipped">
   <span class="keyword indention">*</span>
   <span class="name">def first = response[0]</span>
 
@@ -3188,7 +3302,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Given passed">
+<div class="brief step-name-Given skipped">
   <span class="keyword indention">Given</span>
   <span class="name">path 'getPost'</span>
 
@@ -3215,7 +3329,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">param id = first.id</span>
 
@@ -3242,11 +3356,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When skipped">
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
 
-  <span class="lead-duration duration">0.060</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -3269,7 +3383,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">status 200</span>
 
@@ -3296,7 +3410,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">print 'Response is: ', response</span>
 
@@ -3348,12 +3462,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.093</span>
+  <span class="lead-duration duration">0.054</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-18">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-24">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Get all the movie posts</span>
 
@@ -3364,16 +3478,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-18" class="collapse collapsable-details ">
+  <div id="element-24" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-19">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-25">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -3383,7 +3497,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-19" class="inner-level collapse collapsable-details ">
+  <div id="steps-25" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
@@ -3418,7 +3532,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
 
-  <span class="lead-duration duration">0.092</span>
+  <span class="lead-duration duration">0.054</span>
 
 </div>
 
@@ -3441,7 +3555,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then failed">
   <span class="keyword indention">Then</span>
   <span class="name">status 200</span>
 
@@ -3454,6 +3568,25 @@ $(document).ready(function() {
 
 
 
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-26">
+          <a>status</a>
+      </div>
+      <div id="msg-26" class="collapse collapsable-details  in ">
+        <pre>status code was: 503, expected: 200, response time in milliseconds: 53, url: http://manikandanravi.in/api/movies, response: 
+&lt;html&gt;
+&lt;head&gt;&lt;title&gt;503 Service Temporarily Unavailable&lt;/title&gt;&lt;/head&gt;
+&lt;body&gt;
+&lt;center&gt;&lt;h1&gt;503 Service Temporarily Unavailable&lt;/h1&gt;&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+classpath:features/myportfolioSite-movie-API.feature:28</pre>
+      </div>
+    </div>
+  </div>
+
 
 
 
@@ -3468,7 +3601,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">print 'Response is: ', response</span>
 
@@ -3521,12 +3654,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.646</span>
+  <span class="lead-duration duration">0.352</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-20">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-27">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Checking the Site is reachable by iusing the Get method and response as 200 and OK</span>
 
@@ -3537,16 +3670,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-20" class="collapse collapsable-details ">
+  <div id="element-27" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-21">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-28">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -3556,7 +3689,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-21" class="inner-level collapse collapsable-details ">
+  <div id="steps-28" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
@@ -3591,7 +3724,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method GET</span>
 
-  <span class="lead-duration duration">0.618</span>
+  <span class="lead-duration duration">0.347</span>
 
 </div>
 
@@ -3614,9 +3747,55 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then failed">
   <span class="keyword indention">Then</span>
   <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-29">
+          <a>status</a>
+      </div>
+      <div id="msg-29" class="collapse collapsable-details  in ">
+        <pre>status code was: 503, expected: 200, response time in milliseconds: 161, url: http://manikandanravi.in/api/getPosts, response: 
+&lt;html&gt;
+&lt;head&gt;&lt;title&gt;503 Service Temporarily Unavailable&lt;/title&gt;&lt;/head&gt;
+&lt;body&gt;
+&lt;center&gt;&lt;h1&gt;503 Service Temporarily Unavailable&lt;/h1&gt;&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+classpath:features/myBioSitePerformanceCheck.feature:19</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -3641,38 +3820,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">print response</span>
-
-  <span class="lead-duration duration">0.007</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">print karate.pretty(response)</span>
 
-  <span class="lead-duration duration">0.020</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -3721,12 +3873,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.073</span>
+  <span class="lead-duration duration">0.069</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-22">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-30">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Checking the Site is reachable by iusing the Get method and response as 200 and OK</span>
 
@@ -3737,16 +3889,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-22" class="collapse collapsable-details ">
+  <div id="element-30" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-23">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-31">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -3756,7 +3908,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-23" class="inner-level collapse collapsable-details ">
+  <div id="steps-31" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
@@ -3791,7 +3943,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method GET</span>
 
-  <span class="lead-duration duration">0.064</span>
+  <span class="lead-duration duration">0.068</span>
 
 </div>
 
@@ -3814,7 +3966,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then failed">
   <span class="keyword indention">Then</span>
   <span class="name">status 200</span>
 
@@ -3827,6 +3979,25 @@ $(document).ready(function() {
 
 
 
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-32">
+          <a>status</a>
+      </div>
+      <div id="msg-32" class="collapse collapsable-details  in ">
+        <pre>status code was: 503, expected: 200, response time in milliseconds: 66, url: http://manikandanravi.in/api/getPosts, response: 
+&lt;html&gt;
+&lt;head&gt;&lt;title&gt;503 Service Temporarily Unavailable&lt;/title&gt;&lt;/head&gt;
+&lt;body&gt;
+&lt;center&gt;&lt;h1&gt;503 Service Temporarily Unavailable&lt;/h1&gt;&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+classpath:features/myBioSitePerformanceCheck.feature:30</pre>
+      </div>
+    </div>
+  </div>
+
 
 
 
@@ -3841,7 +4012,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">print response</span>
 
@@ -3868,11 +4039,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">print karate.pretty(response)</span>
 
-  <span class="lead-duration duration">0.008</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 

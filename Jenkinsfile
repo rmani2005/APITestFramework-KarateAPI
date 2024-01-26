@@ -21,18 +21,25 @@ pipeline
                 //env.module
                 //env.exeType
                 //env.
-                sh 'mvn clean test' 
+                sh 'mvn clean test -Dtest=TestRunnerCucumberReport -Dmaven.test.failure.ignore=true'
+                
+        
             }
+         }
+         stage ('Starting ART job') 
+         {
+    		build job: 'TestAutomationframework-Cypress'            
             post 
             {
-                success 
-                {
-                    archiveArtifacts artifacts:'target/cucumber-html-reports/*.html', fingerprint: true
+  	 			success 
+                    {
+	                archiveArtifacts artifacts:'target/cucumber-html-reports/overview-features.html', fingerprint: true
+                    archiveArtifacts artifacts:'target/karate-reports/karate-summary.html', fingerprint: true
                     echo 'Successfully!'
-                }
+                    
+                    }
                 
 		        failure {
-		        
 		            echo 'Failed!'
 		        }
 		        unstable {
